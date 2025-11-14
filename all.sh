@@ -4,11 +4,12 @@ set -e
 pacman -Syu
 
 pacman -S mesa vulkan-radeon nvidia nvidia-utils nvidia-settings vulkan-icd-loader
-pacman -S pipewire-alsa pipewire-jack pipewire-pulse pamixer
+pacman -S pipewire-alsa pipewire-jack pipewire-pulse pamixer pavucontrol
 pacman -S ly mako bluez bluez-utils grim slurp
-pacman -S kitty thunar dmenu wofi
+pacman -S kitty thunar dmenu wofi waybar 
 pacman -S obsidian prismlauncher steam code
-yay -S brave-bin
+yay -S eww wlogout
+brave-bin 
 pacman -S tk
 
 pacman -S hyprland hyprpaper xdg-desktop-portal xdg-desktop-portal-hyprland 
