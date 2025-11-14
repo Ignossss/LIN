@@ -1,29 +1,27 @@
 #!/bin/bash
 set -e
 
-sudo pacman -Syu --noconfirm
+pacman -Syu
 
-sudo pacman -S --needed --noconfirm \
-  mesa vulkan-radeon mesa-vulkan-drivers \
-  nvidia nvidia-utils nvidia-settings lib32-nvidia-utils \
-  vulkan-icd-loader
+pacman -S mesa vulkan-radeon nvidia nvidia-utils nvidia-settings vulkan-icd-loader
+pacman -S pipewire-alsa pipewire-jack pipewire-pulse pamixer
+pacman -S ly mako bluez bluez-utils grim slurp
+pacman -S kitty thunar dmenu wofi
+pacman -S obsidian prismlauncher steam code
+yay -S brave-bin
+pacman -S tk
 
-yay -S --needed --noconfirm \
-  hyprland ninja gcc cmake meson libxcb xcb-proto xcb-util xcb-util-keysyms \
-  libxfixes libx11 libxcomposite libxrender libxcursor pixman \
-  wayland-protocols cairo pango libxkbcommon xcb-util-wm \
-  xorg-xwayland libinput libliftoff libdisplay-info cpio \
-  tomlplusplus hyprlang-git hyprcursor-git hyprwayland-scanner-git \
-  xcb-util-errors hyprutils-git glaze hyprgraphics-git \
-  aquamarine-git re2 hyprland-qtutils-git playerctl 
+sudo pacman -S hyprland hyprpaper xdg-desktop-portal xdg-desktop-portal-hyprland 
 
-sudo pacman -S --needed --noconfirm \
-  xdg-desktop-portal xdg-desktop-portal-hyprland
+sudo pacman -S bspwm sxhkd picom
 
-yay -S --needed --noconfirm \
-  hyprpaper  hypridle
 
-yay -S --needed --noconfirm \
-  mako pamixer bluez bluez-utils grim slurp fuzzel neovim waybar 
+systemctl enable --now NetworkManager
+systemctl enable --now ly
+systemctl enable --now bluetooth
 
-sudo systemctl enable --now bluetooth.service
+sudo pacman -S os-prober
+
+echo Enable os-prober: helix /etc/default/grub \|\| grub-mkconfig -o /boot/grub/grub.cfg
+echo Place the dotfiles: cp \(LIN/.config/\)FOLDER ~/.config/FOLDER/
+echo Chmod \"bspwm\" \in ~/.config/bspwm/ \|\| chmod +x bspwm
