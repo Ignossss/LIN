@@ -16,7 +16,6 @@ pacman -S hyprland hyprpaper xdg-desktop-portal xdg-desktop-portal-hyprland
 pacman -S bspwm sxhkd picom
 
 pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-dejavu ttf-font-awesome ttf-noto-nerd 
-yay -S ttf-ms-fonts 
 
 systemctl enable NetworkManager
 systemctl enable ly
