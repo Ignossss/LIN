@@ -9,7 +9,7 @@ pacman -S ly mako bluez bluez-utils grim slurp
 pacman -S kitty thunar dmenu wofi waybar 
 pacman -S obsidian prismlauncher steam code
 yay -S eww wlogout
-brave-bin 
+yay -S brave-bin 
 pacman -S tk
 
 pacman -S hyprland hyprpaper xdg-desktop-portal xdg-desktop-portal-hyprland 
