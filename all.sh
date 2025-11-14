@@ -12,7 +12,8 @@ pacman -S tk
 
 pacman -S hyprland hyprpaper xdg-desktop-portal xdg-desktop-portal-hyprland 
 
-pacman -S bspwm sxhkd picom
+pacman -S xorg bspwm sxhkd picom
+xauth generate :0 . trusted
 
 pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-dejavu ttf-font-awesome ttf-noto-nerd 
 
@@ -25,3 +26,4 @@ pacman -S os-prober
 echo Enable os-prober: helix /etc/default/grub \|\| grub-mkconfig -o /boot/grub/grub.cfg
 echo Place the dotfiles: cp \(LIN/.config/\)FOLDER ~/.config/FOLDER/
 echo Chmod \"bspwm\" \in ~/.config/bspwm/ \|\| chmod +x bspwm
+echo Do: 
