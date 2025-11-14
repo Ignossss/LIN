@@ -18,9 +18,9 @@ pacman -S bspwm sxhkd picom
 pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-dejavu ttf-font-awesome ttf-noto-nerd 
 yay -S ttf-ms-fonts 
 
-systemctl enable --now NetworkManager
-systemctl enable --now ly
-systemctl enable --now bluetooth
+systemctl enable NetworkManager
+systemctl enable ly
+systemctl enable bluetooth
 
 pacman -S os-prober
 
