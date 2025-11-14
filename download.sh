@@ -11,16 +11,18 @@ pacman -S obsidian prismlauncher steam code
 yay -S brave-bin
 pacman -S tk
 
-sudo pacman -S hyprland hyprpaper xdg-desktop-portal xdg-desktop-portal-hyprland 
+pacman -S hyprland hyprpaper xdg-desktop-portal xdg-desktop-portal-hyprland 
 
-sudo pacman -S bspwm sxhkd picom
+pacman -S bspwm sxhkd picom
 
+pacman -S noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-dejavu ttf-font-awesome ttf-noto-nerd 
+yay -S ttf-ms-fonts 
 
 systemctl enable --now NetworkManager
 systemctl enable --now ly
 systemctl enable --now bluetooth
 
-sudo pacman -S os-prober
+pacman -S os-prober
 
 echo Enable os-prober: helix /etc/default/grub \|\| grub-mkconfig -o /boot/grub/grub.cfg
 echo Place the dotfiles: cp \(LIN/.config/\)FOLDER ~/.config/FOLDER/
