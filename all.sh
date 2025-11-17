@@ -7,7 +7,7 @@ pacman -S mesa vulkan-radeon nvidia nvidia-utils nvidia-settings vulkan-icd-load
 pacman -S pipewire-alsa pipewire-jack pipewire-pulse pamixer pavucontrol
 pacman -S ly mako bluez bluez-utils grim slurp
 pacman -S kitty thunar wofi
-pacman -S obsidian
+pacman -S obsidian nwg-look
 
 pacman -S hyprland hyprpaper xdg-desktop-portal xdg-desktop-portal-hyprland 
 
